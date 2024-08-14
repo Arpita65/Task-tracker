@@ -1,0 +1,105 @@
+/* styles.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e0f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0 0 20px;
+    font-size: 24px;
+    color: #00796b;
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #b2dfdb;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background: #00796b;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #004d40;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 15px;
+    background: #b2dfdb;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s;
+}
+
+li:hover {
+    background: #80cbc4;
+}
+
+li span:first-child {
+    flex: 1;
+    text-align: left;
+}
+
+li .edit, li .delete {
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+li .edit:hover {
+    background: rgba(255, 193, 7, 0.2);
+}
+
+li .delete:hover {
+    background: rgba(255, 87, 34, 0.2);
+}
+
+li .edit {
+    color: #ffc107;
+}
+
+li .delete {
+    color: #ff5722;
+}
